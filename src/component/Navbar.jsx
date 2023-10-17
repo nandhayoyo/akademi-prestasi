@@ -1,12 +1,14 @@
 import React from "react";
 import logo_img from "../assets/image/logoipsum.svg"
+import profile_img from "../assets/image/user-ninja.svg";
+
 
 const Navbar = () => {
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div className="navbar bg-base-200 rounded-xl">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl font-bold" href="#">
+          <a className="btn btn-ghost normal-case text-xl font-bold" href="/">
             <img src={logo_img} alt="logo" className="mx-auto" />
             FindResto
           </a>
@@ -22,7 +24,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={profile_img} />
               </div>
             </label>
             <ul

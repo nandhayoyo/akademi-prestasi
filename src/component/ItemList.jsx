@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import resto_img from "../assets/image/resto1.png";
+import map_img from "../assets/image/map-marker.svg";
 import { getItem } from "../services/ItemServices";
 import useItemStore from "../store/useItemStore";
+import { Link } from "react-router-dom";
 
 const ItemList = () => {
   const { items, setItems, limit, setLimit } = useItemStore();
@@ -48,13 +49,13 @@ const ItemList = () => {
 
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 p-4">
+      <div className="max-w-screen-xl mx-auto mt-5 grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-3 p-4">
         {displayedItems.map((item) => (
           <div
             key={item.id}
-            className="card w-96 bg-base-100 shadow-xl image-full"
+            className="card w-auto bg-base-100 shadow-xl image-full"
           >
-            <figure>
+            <figure className="">
               <img
                 src={`https://restaurant-api.dicoding.dev/images/small/${item.pictureId}`}
                 alt={item.name}
@@ -76,14 +77,31 @@ const ItemList = () => {
                   {item.rating}
                 </p>
               </div>
-              <p>Kota: {item.city}</p>
+              <div className="flex items-center mt-2">
+                <img src={map_img} width={20} className="mr-1" />
+
+                <p>{item.city}</p>
+              </div>
+
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Visit</button>
+                <Link
+                  to={`/detail/${item.id}`}
+                  className="btn bg-gray-200 hover:bg-gray-400"
+                >
+                  {/* <button className="btn bg-gray-200 hover:bg-gray-400"> */}
+                  Visit
+                  {/* </button> */}
+                </Link>
               </div>
             </div>
           </div>
         ))}
-        <button onClick={handleLoadMore} className="btn btn-primary mt-4">
+      </div>
+      <div className="text-center my-5">
+        <button
+          onClick={handleLoadMore}
+          className="btn bg-gray-400 hover:bg-gray-200"
+        >
           Muat Ulang
         </button>
       </div>

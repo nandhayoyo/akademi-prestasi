@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.avatar img {
+  object-fit: contain !important;
+}
+
 /* .App {
   text-align: center;
 }

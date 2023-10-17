@@ -9,3 +9,8 @@ export const getItem = async (limit) => {
   const res = await ItemServiceRequest.get(`/list?limit=${limit}`);
   return res.data;
 };
+
+export const getItemById = async (itemId) => {
+  const res = await ItemServiceRequest.get(`/detail/${itemId}`);
+  return res.data;
+};

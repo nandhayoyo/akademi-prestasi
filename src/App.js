@@ -1,15 +1,18 @@
 import "./App.css";
-import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
-import ItemList from "./component/ItemList";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import ItemDetail from "./pages/ItemDetail";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <ItemList />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detail/:id" element={<ItemDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
