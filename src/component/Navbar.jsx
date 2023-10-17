@@ -1,11 +1,15 @@
 import React from "react";
+import logo_img from "../assets/image/logoipsum.svg"
 
 const Navbar = () => {
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <div className="navbar bg-slate-200 rounded-xl">
+      <div className="navbar bg-base-200 rounded-xl">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl font-bold" href="#">
+            <img src={logo_img} alt="logo" className="mx-auto" />
+            FindResto
+          </a>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
