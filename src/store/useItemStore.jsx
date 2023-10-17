@@ -5,7 +5,7 @@ const useItemStore = create((set) => ({
   setItems: (items) => set({ items }),
   limit: 3,
   setLimit: (limit) => set({ limit }),
-  itemDetail: [],
+  itemDetail: null,
   setItemDetail: (itemDetail) => set({ itemDetail }),
 }));
 

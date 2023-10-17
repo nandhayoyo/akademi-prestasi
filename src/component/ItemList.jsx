@@ -88,9 +88,7 @@ const ItemList = () => {
                   to={`/detail/${item.id}`}
                   className="btn bg-gray-200 hover:bg-gray-400"
                 >
-                  {/* <button className="btn bg-gray-200 hover:bg-gray-400"> */}
                   Visit
-                  {/* </button> */}
                 </Link>
               </div>
             </div>

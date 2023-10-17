@@ -10,7 +10,7 @@ export const getItem = async (limit) => {
   return res.data;
 };
 
-export const getItemById = async (itemId) => {
-  const res = await ItemServiceRequest.get(`/detail/${itemId}`);
+export const getItemById = async (id) => {
+  const res = await ItemServiceRequest.get(`/detail/${id}`);
   return res.data;
 };
