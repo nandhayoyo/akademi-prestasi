@@ -18,7 +18,16 @@ const Footer = () => {
 
             <div className="mt-3">
               <p className="text-gray-500">
-                © NandhaYoyo 2023. All rights reserved.
+                ©{" "}
+                <a
+                  className="text-gray-900"
+                  rel="noopener noreferrer"
+                  href="https://www.nandhayoyo.online/"
+                  target="_blank"
+                >
+                  NandhaYoyo
+                </a>{" "}
+                2023. All rights reserved.
               </p>
             </div>
 

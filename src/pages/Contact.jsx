@@ -206,7 +206,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              <div className=" flex gap-x-7 py-6">
+              <div className="flex gap-x-7 py-6">
                 <svg
                   className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
                   xmlns="http://www.w3.org/2000/svg"
