@@ -17,12 +17,12 @@ const Navbar = () => {
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <nav
-        className="relative max-w-7xl w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700"
+        className="relative max-w-7xl w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto "
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
           <a
-            className="flex-none text-xl font-semibold dark:text-white"
+            className="flex-none text-xl font-semibold "
             href="/"
             aria-label="Brand"
           >
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover-bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm "
               onClick={toggleMobileMenu}
               aria-expanded={isShowMobileMenu}
               aria-controls="navbar-collapse-with-animation"
@@ -72,7 +72,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
             <a
-              className="font-medium text-gray-500 hover:text-blue-500 md:py-6 dark:text-gray-400 dark:hover:text-gray-500"
+              className="font-medium text-gray-500 hover:text-blue-500 md:py-6 "
               href="/team"
               aria-current="page"
             >
