@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
@@ -6,6 +7,13 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsShowMobileMenu(!isShowMobileMenu);
   };
+
+  const handleClick = (e) => {
+    toast("This feature under maintenance!", {
+      icon: "⚠️",
+    });
+  };
+
 
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -85,6 +93,7 @@ const Navbar = () => {
             </a>
             <a
               className="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 md:border-l md:border-gray-300 md:my-6 md:pl-6 dark-border-gray-700 dark-text-gray-400 dark-hover-text-blue-500"
+              onClick={handleClick}
               href="#"
             >
               <svg

@@ -1,8 +1,14 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const handleClick = (e) => {
+    toast("This feature under maintenance!", {
+      icon: "⚠️",
+    });
+  };
   return (
     <>
       <Navbar />
@@ -26,7 +32,7 @@ const Contact = () => {
               <form>
                 <div className="grid gap-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div >
+                    <div>
                       <label for="hs-firstname-contacts-1" className="sr-only">
                         First Name
                       </label>
@@ -96,7 +102,8 @@ const Contact = () => {
 
                 <div className="mt-4 grid">
                   <button
-                    type="submit"
+                    // type="submit"
+                    onClick={handleClick}
                     className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
                   >
                     Send inquiry
@@ -134,6 +141,7 @@ const Contact = () => {
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                     href="#"
+                    onClick={handleClick}
                   >
                     Contact support
                     <svg
@@ -177,6 +185,7 @@ const Contact = () => {
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                     href="#"
+                    onClick={handleClick}
                   >
                     Visit FAQ
                     <svg
@@ -219,6 +228,7 @@ const Contact = () => {
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                     href="#"
+                    onClick={handleClick}
                   >
                     Contact sales
                     <svg
@@ -261,6 +271,7 @@ const Contact = () => {
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                     href="#"
+                    // onClick={handleClick}
                   >
                     example@site.com
                   </a>

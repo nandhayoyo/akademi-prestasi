@@ -7,6 +7,7 @@ import ItemDetail from "./pages/ItemDetail";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import Explore from "./pages/Explore";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/explore" element={<Explore />} />
       </Routes>
+      <Toaster/>
     </Router>
   );
 }
