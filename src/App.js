@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ItemDetail from "./pages/ItemDetail";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
+import Explore from "./pages/Explore";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/detail/:id" element={<ItemDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/explore" element={<Explore />} />
       </Routes>
     </Router>
   );

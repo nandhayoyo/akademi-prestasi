@@ -22,7 +22,7 @@ const ItemList = () => {
       console.error("Terjadi kesalahan saat mengambil data:", error);
     }
   };
-
+//
   useEffect(() => {
     fetchData();
   }, [limit]);

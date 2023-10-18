@@ -1,4 +1,5 @@
 import React from "react";
+import ava_img from "../assets/image/ava.png";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 
@@ -12,15 +13,15 @@ const Team = () => {
             <p className="p-2 text-sm font-medium tracki text-center uppercase">
               Development team
             </p>
-            <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">
+            <h1 className="text-2xl font-bold leadi text-center sm:text-3xl">
               The talented people behind the scenes
             </h1>
             <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
-              <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-slate-500 dark:bg-gray-100 dark:text-gray-800">
+              <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-slate-300 dark:bg-gray-100 dark:text-gray-800">
                 <img
-                  alt=""
+                  alt="avatar"
                   className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                  src="https://source.unsplash.com/100x100/?portrait?0"
+                  src={ava_img}
                 />
                 <div className="flex-1 my-4">
                   <p className="text-xl font-semibold leadi">Nandha Yuana D</p>
@@ -30,7 +31,8 @@ const Team = () => {
                   <a
                     rel="noopener noreferrer"
                     href="https://www.nandhayoyo.online/"
-                    title="Email"
+                    target="_blank"
+                    title="Mail"
                     className="dark:text-gray-900 hover:dark:text-violet-400"
                   >
                     <svg
@@ -46,6 +48,7 @@ const Team = () => {
                   <a
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/nandhayoyo/"
+                    target="_blank"
                     title="LinkedIn"
                     className="dark:text-gray-900 hover:dark:text-violet-400"
                   >
@@ -61,6 +64,7 @@ const Team = () => {
                   <a
                     rel="noopener noreferrer"
                     href="https://github.com/nandhayoyo"
+                    target="_blank"
                     title="GitHub"
                     className="dark:text-gray-900 hover:dark:text-violet-400"
                   >
