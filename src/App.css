@@ -13,10 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* .App {
-  text-align: center;
+.App {
+  background: white;
 }
-
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
