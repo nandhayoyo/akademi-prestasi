@@ -6,6 +6,13 @@
   object-fit: contain !important;
 }
 
+body {
+  margin: 0;
+  font-family: Montserrat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* .App {
   text-align: center;
 }

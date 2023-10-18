@@ -4,4 +4,8 @@ module.exports = {
     extend: {},
   },
   plugins: [require("daisyui")],
+  fontFamily: {
+    body: ["Montserrat"],
+    sans: ["Montserrat"],
+  },
 };

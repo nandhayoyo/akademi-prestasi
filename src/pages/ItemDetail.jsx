@@ -12,6 +12,7 @@ import useItemStore from "../store/useItemStore";
 const ItemDetail = () => {
   const { id } = useParams();
   const { itemDetail, setItemDetail } = useItemStore();
+
   console.log("ITEM DETAILLLLL >>>>> ", itemDetail);
 
   useEffect(() => {
@@ -51,28 +52,60 @@ const ItemDetail = () => {
                 className="rounded-xl"
               />
             </div>
-            <div className="flex-col">
-              <kbd className="kbd text-3xl font-semibold">
-                {itemDetail.name}
-              </kbd>
-              <div className="flex itemDetail.-center mt-2">
-                <img src={map_img} width={20} className="mr-1" />
-                <p>{itemDetail.city}</p>
-              </div>
-              <p>{itemDetail.description}</p>
-              <div className="mt-4">
-                <kbd className="kbd text-xl font-semibold">Categories</kbd>
-                <ul>
-                  {itemDetail.categories && itemDetail.categories.length > 0 ? (
-                    <div className="mt-4">
-                      <ul>
-                        {itemDetail.categories.map((category, index) => (
-                          <li key={index}>{category.name}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                </ul>
+            <div className="card bg-base-200 shadow-2xl p-4">
+              <div className="flex-col">
+                <kbd className="kbd text-2xl font-semibold p-4">
+                  {itemDetail.name}
+                </kbd>
+                <div className="flex itemDetail.-center mt-2 mb-2">
+                  <svg
+                    className="w-6 h-auto text-yellow-300 mr-1"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 22 20"
+                  >
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <p className="ml-1 mr-3 font-bold dark:text-white ">
+                    {itemDetail.rating}
+                  </p>
+                  <p className="border-r-2 mr-3"></p>
+                  <img src={map_img} width={25} className="mr-1" />
+                  <p>{itemDetail.city}</p>
+                </div>
+                <p className="font-sans">{itemDetail.description}</p>
+                <div className="mt-4">
+                  <kbd className="kbd text-xl font-semibold">Categories</kbd>
+                  <ul>
+                    {itemDetail.categories &&
+                    itemDetail.categories.length > 0 ? (
+                      <div className="mt-4">
+                        <ul>
+                          {itemDetail.categories.map((category, index) => (
+                            <div key={index} className="flex">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-6 h-6 mr-2"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M4.5 12.75l6 6 9-13.5"
+                                />
+                              </svg>
+                              {category.name}
+                            </div>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -86,66 +119,79 @@ const ItemDetail = () => {
             </h1>
           </div>
           <div class="mt-4 lg:row-span-3 lg:mt-0">
-            <kbd className="kbd text-xl font-semibold">Foods<img src={foods_img} width={20} className="ml-2"/></kbd>
-            <ul>
-              {itemDetail.menus &&
-              itemDetail.menus.foods &&
-              itemDetail.menus.foods.length > 0 ? (
-                <div className="mt-4">
-                  <ul>
-                    {itemDetail.menus.foods.map((food, index) => (
-                        <div key={index} className="flex">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="w-6 h-6"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M18 12H6"
-                          />
-                        </svg>
-                        {food.name}
-                      </div>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </ul>
-            <kbd className="kbd text-xl font-semibold mt-5">Drinks <img src={drink_img} width={20} className="ml-2"/></kbd>
-            <ul>
-              {itemDetail.menus &&
-              itemDetail.menus.drinks &&
-              itemDetail.menus.drinks.length > 0 ? (
-                <div className="mt-4">
-                  <ul>
-                    {itemDetail.menus.drinks.map((drink, index) => (
-                      <div key={index} className="flex">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="w-6 h-6"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M18 12H6"
-                          />
-                        </svg>
-                        {drink.name}
-                      </div>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </ul>
+            <div className="card bg-base-100 shadow-2xl p-4">
+              <div className="flex-col">
+                <kbd className="kbd text-xl font-semibold">
+                  Foods
+                  <img src={foods_img} width={20} className="ml-2" />
+                </kbd>
+                <ul>
+                  {itemDetail.menus &&
+                  itemDetail.menus.foods &&
+                  itemDetail.menus.foods.length > 0 ? (
+                    <div className="mt-4">
+                      <ul>
+                        {itemDetail.menus.foods.map((food, index) => (
+                          <div key={index} className="flex">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M18 12H6"
+                              />
+                            </svg>
+                            {food.name}
+                          </div>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                </ul>
+              </div>
+            </div>
+            <div className="card bg-base-100 shadow-2xl p-4 mt-2">
+              <div className="flex-col">
+                <kbd className="kbd text-xl font-semibold ">
+                  Drinks <img src={drink_img} width={20} className="ml-2" />
+                </kbd>
+                <ul>
+                  {itemDetail.menus &&
+                  itemDetail.menus.drinks &&
+                  itemDetail.menus.drinks.length > 0 ? (
+                    <div className="mt-4">
+                      <ul>
+                        {itemDetail.menus.drinks.map((drink, index) => (
+                          <div key={index} className="flex">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M18 12H6"
+                              />
+                            </svg>
+                            {drink.name}
+                          </div>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Section Customer Reviews */}

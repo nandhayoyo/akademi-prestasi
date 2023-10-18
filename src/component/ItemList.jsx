@@ -100,7 +100,7 @@ const ItemList = () => {
           onClick={handleLoadMore}
           className="btn bg-gray-400 hover:bg-gray-200"
         >
-          Muat Ulang
+          View More
         </button>
       </div>
     </>
