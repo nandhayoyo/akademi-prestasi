@@ -15,17 +15,17 @@ const Contact = () => {
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
+            <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl ">
               Contact us
             </h1>
-            <p className="mt-1 text-gray-600 dark:text-gray-400">
+            <p className="mt-1 text-gray-600 ">
               We'd love to talk about how we can help you.
             </p>
           </div>
 
           <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+            <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 ">
+              <h2 className="mb-8 text-xl font-semibold text-gray-800 ">
                 Fill in the form
               </h2>
 
@@ -40,7 +40,7 @@ const Contact = () => {
                         type="text"
                         name="hs-firstname-contacts-1"
                         id="hs-firstname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-500 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="py-3 px-4 block w-full border-gray-500 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 "
                         placeholder="First Name"
                       />
                     </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                         type="text"
                         name="hs-lastname-contacts-1"
                         id="hs-lastname-contacts-1"
-                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 "
                         placeholder="Last Name"
                       />
                     </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                       name="hs-email-contacts-1"
                       id="hs-email-contacts-1"
                       autocomplete="email"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 "
                       placeholder="Email"
                     />
                   </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                       type="text"
                       name="hs-phone-number-1"
                       id="hs-phone-number-1"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 "
                       placeholder="Phone Number"
                     />
                   </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                       id="hs-about-contacts-1"
                       name="hs-about-contacts-1"
                       rows="4"
-                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 "
                       placeholder="Details"
                     ></textarea>
                   </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                   <button
                     // type="submit"
                     onClick={handleClick}
-                    className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                    className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 "
                   >
                     Send inquiry
                   </button>
@@ -118,10 +118,10 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="divide-y divide-gray-200 dark:divide-gray-800">
+            <div className="divide-y divide-gray-200 ">
               <div className="flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -132,14 +132,12 @@ const Contact = () => {
                   <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                    Knowledgebase
-                  </h3>
+                  <h3 className="font-semibold text-gray-800">Knowledgebase</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     We're here to help with any questions or code.
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                     href="#"
                     onClick={handleClick}
                   >
@@ -165,7 +163,7 @@ const Contact = () => {
 
               <div className="flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -176,14 +174,12 @@ const Contact = () => {
                   <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                    FAQ
-                  </h3>
+                  <h3 className="font-semibold text-gray-800 ">FAQ</h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Search our FAQ for answers to anything you might ask.
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                     href="#"
                     onClick={handleClick}
                   >
@@ -208,7 +204,7 @@ const Contact = () => {
               </div>
               <div className="flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -219,14 +215,14 @@ const Contact = () => {
                   <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
+                  <h3 className="font-semibold text-gray-800 ">
                     Developer APIs
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
                     Check out our development quickstart guide.
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                     href="#"
                     onClick={handleClick}
                   >
@@ -252,7 +248,7 @@ const Contact = () => {
 
               <div className=" flex gap-x-7 py-6">
                 <svg
-                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
+                  className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -262,14 +258,14 @@ const Contact = () => {
                   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-200">
+                  <h3 className="font-semibold text-gray-800 ">
                     Contact us by email
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">
                     If you wish to write us an email instead please use
                   </p>
                   <a
-                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
+                    className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                     href="#"
                     // onClick={handleClick}
                   >
