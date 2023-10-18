@@ -8,7 +8,7 @@ const Team = () => {
     <>
       <Navbar />
       <div>
-        <section className="py-6 dark:bg-gray-800 dark:text-gray-100">
+        <section className="py-6  ">
           <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
             <p className="p-2 text-sm font-medium tracki text-center uppercase">
               Development team
@@ -17,10 +17,10 @@ const Team = () => {
               The talented people behind the scenes
             </h1>
             <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
-              <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-slate-300 dark:bg-gray-100 dark:text-gray-800">
+              <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 bg-slate-300 ">
                 <img
                   alt="avatar"
-                  className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                  className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full "
                   src={ava_img}
                 />
                 <div className="flex-1 my-4">
@@ -33,7 +33,7 @@ const Team = () => {
                     href="https://www.nandhayoyo.online/"
                     target="_blank"
                     title="Mail"
-                    className="dark:text-gray-900 hover:dark:text-violet-400"
+                    className=""
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const Team = () => {
                     href="https://www.linkedin.com/in/nandhayoyo/"
                     target="_blank"
                     title="LinkedIn"
-                    className="dark:text-gray-900 hover:dark:text-violet-400"
+                    className=""
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const Team = () => {
                     href="https://github.com/nandhayoyo"
                     target="_blank"
                     title="GitHub"
-                    className="dark:text-gray-900 hover:dark:text-violet-400"
+                    className=""
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
